@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Sirius AI - Voice Assistant</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex align-items-center">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Assistant Logo" class="logo" style="width: 80px; height: auto;">
+        </div>
+        <main class="d-flex flex-column align-items-center mt-5">
+            <h1 class="text-center">Welcome to Sirius.AI</h1>
+            <p class="text-center">Let your words drive actions. Speak to explore endless possibilities!</p>
+            <div id="listening-indicator" class="listening-indicator text-center mt-3">Listening...</div>
+            <div class="text-center mt-4">
+                <button id="start-button" class="btn microphone-btn">
+                    <i class="fas fa-microphone"></i> Activate Voice Assistant
+                </button>
+            </div>
+            <div id="response" class="response text-center mt-4">
+                <p><em>Your assistant is ready to listen...</em></p>
+            </div>
+
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title">How It Works</h5>
+                    <p class="card-text">Press the <strong>"Activate Voice Assistant"</strong> button and start speaking. Your voice commands will be processed in real-time to deliver accurate responses.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle text-success"></i> Instant voice recognition</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Multi-command support</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Seamless interaction</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center mt-5 mb-3">
+            <p class="text-muted">© 2024 Sirius AI. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

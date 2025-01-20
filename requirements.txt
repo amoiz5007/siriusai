@@ -1,0 +1,6 @@
+Flask
+requests
+g4f
+wikipedia
+g4f
+
